@@ -1,0 +1,128 @@
+/* styles.css */
+.body-customer {
+  width: 1150px;
+  height: fit-content;
+  margin: 0px auto;
+}
+.body-admin {
+  width: fit-content;
+  height: fit-content;
+  margin: 0px auto;
+}
+div.inline {
+  display: inline-block;
+}
+figure.caption-right {
+  display: flex;
+  align-items: center;
+}
+.align-center {
+  width: fit-content;
+  margin: 0px auto;
+}
+/* .align-valign-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0px 20px 20px 20px;
+  border: 1px solid black;
+} */
+.text-center {
+  text-align: center;
+}
+span.link {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+/* menu.css */
+div.border-bottom {
+  border-bottom: 1px solid black;
+  padding: 10px 0px 10px 0px;
+}
+div.float-left {
+  float: left;
+  display: flex;
+}
+div.float-left :link{
+  text-decoration: none;
+}
+div.float-right {
+  float: right;
+}
+div.float-right :link{
+  text-decoration: none;
+}
+div.float-clear {
+  clear: both;
+}
+li.menu {
+  display: inline;
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+
+li.menu1{
+  list-style-type: none;
+  margin-right: 10px;
+}
+li.menu1 a {
+  color: black;
+  font-weight: bold;
+}
+li.menu1 img {
+  width: 30px; /* Adjust the width as needed */
+  height: auto; /* Maintain the aspect ratio */
+  margin-right: 5px; /* Adjust the margin as needed */
+}
+ul.menu{
+  margin: 0px;
+  padding: 10px;
+  margin: 0px;
+  background-color: rgb(139, 139, 139);
+  border-radius: 3px;
+  color: white;
+  border: black solid 1px;
+  font-weight: bold;
+}
+ul.menu a {
+  color: white; 
+}
+ul.menu :link{
+  padding: 5px;
+}
+li.menu :hover{
+  background-color: rgb(200, 200, 200);
+  color: black;
+  border-radius: 3px;
+  transition: 0.5s;
+}
+form.search {
+  margin: 0px;
+}
+input.keyword {
+  width: 110px;
+}
+/* datatable.css */
+.datatable {
+  text-align: center;
+  border-collapse: collapse;
+}
+/* header */
+tr:first-child.datatable {
+  background-color: #ffcc00;
+}
+/* even rows, except header */
+tr:not(:first-child):nth-child(even).datatable {
+  background-color: #f5f5f5;
+}
+/* odd rows, except header */
+tr:not(:first-child):nth-child(odd).datatable {
+  background-color: #ffeeaa;
+}
+/* except header */
+tr:not(:first-child):hover.datatable {
+  background-color: #dcfcfc;
+  cursor: pointer;
+}
