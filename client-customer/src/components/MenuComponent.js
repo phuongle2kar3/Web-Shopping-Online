@@ -24,20 +24,20 @@ class Menu extends Component {
         <div className="border-bottom">
           <div className="float-left">
             <li className="menu1"><Link to='/'><img src='Home.png' alt="Logo" />Apple Store</Link></li>
-          <ul className="menu">
-            <li className="menu"><Link to='/admin/order'>Order</Link></li>
-              {cates}
-          </ul>
+            <ul className="menu">
+              <li className="menu"><Link to='/admin/order'>Order</Link></li>
+                {cates}
+            </ul>
+          </div>
+        <div className="float-right">
+          <form className="search">
+            <input id='search' type="search" placeholder="Nhập sản phần tìm kiếm " className="keyword" value={this.state.txtKeyword} onChange={(e) => { this.setState({ txtKeyword: e.target.value }) }} />
+            <input id='submit' type="submit" value="SEARCH" onClick={(e) => this.btnSearchClick(e)} />
+          </form>
+        </div>
+        <div className="float-clear" />
+        </div>
       </div>
-      <div className="float-right">
-        <form className="search">
-          <input id='search' type="search" placeholder="Nhập sản phần tìm kiếm " className="keyword" value={this.state.txtKeyword} onChange={(e) => { this.setState({ txtKeyword: e.target.value }) }} />
-          <input id='submit' type="submit" value="SEARCH" onClick={(e) => this.btnSearchClick(e)} />
-        </form>
-      </div>
-      <div className="float-clear" />
-      </div>
-    </div>
     );
   }
   componentDidMount() {
