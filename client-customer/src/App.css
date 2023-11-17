@@ -38,7 +38,6 @@ span.link {
 }
 /* menu.css */
 div.border-bottom {
-  border-bottom: 1px solid black;
   padding: 10px 0px 10px 0px;
 }
 div.float-left {
@@ -48,12 +47,29 @@ div.float-left {
 div.float-left :link{
   text-decoration: none;
 }
+/* zzzzzzzzzzzzzzzfloat-rigth zzzzzzzzzzzzzzzzzzzzzzz*/
 div.float-right {
   float: right;
+  padding: 10px;
 }
+div.float-right input{
+  margin-left: 10px;
+  height: 30px;
+}
+.search #search{
+  width: 250px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+.search #search:hover{
+  border: 1px solid rgb(200, 200, 200);
+  transition: 0.3s;
+}
+
 div.float-right :link{
   text-decoration: none;
 }
+/* zzzzzzzzzzzzzzzzzzzfloat rigth zzzzzzzzzzzzzzzzzzzzzz*/
 div.float-clear {
   clear: both;
 }
@@ -70,6 +86,7 @@ li.menu1{
 li.menu1 a {
   color: black;
   font-weight: bold;
+  margin-left: 15px;
 }
 li.menu1 img {
   width: 30px; /* Adjust the width as needed */
@@ -83,7 +100,6 @@ ul.menu{
   background-color: rgb(139, 139, 139);
   border-radius: 3px;
   color: white;
-  border: black solid 1px;
   font-weight: bold;
 }
 ul.menu a {
@@ -96,7 +112,7 @@ li.menu :hover{
   background-color: rgb(200, 200, 200);
   color: black;
   border-radius: 3px;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 form.search {
   margin: 0px;
@@ -104,6 +120,11 @@ form.search {
 input.keyword {
   width: 110px;
 }
+.body-menu{
+  background-color: rgb(139, 139, 139);
+  border-radius: 10px;
+}
+
 /* datatable.css */
 .datatable {
   text-align: center;
