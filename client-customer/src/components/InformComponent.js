@@ -11,7 +11,7 @@ class Inform extends Component {
         {this.context.token === '' ?
           <div id='account'><Link to='/login'><img src='login.png' alt="Logo" />Login</Link>  <Link to='/signup'><img src='sign-up.png' alt="Logo" />Sign-up</Link>  <Link to='/active'><img src='active.png' alt="Logo" />Active</Link></div>
           :
-          <div>Xin chào ! <b>{this.context.customer.name}</b><div id='logout'> <Link to='/home' onClick={() => this.lnkLogoutClick()}>Logout</Link> <Link to='/myprofile'>My profile</Link> <Link to='/myorders'>My orders</Link></div></div>
+          <div id='inaccount'><img src='account.png' alt="Logo" /><b>{this.context.customer.name}</b><div id='logout'><Link to='/home' onClick={() => this.lnkLogoutClick()}> <img src='logout.png' alt="Logo" />Logout</Link> <Link to='/myprofile'><img src='user.png' alt='logo'/>My profile</Link> <Link to='/myorders'><img src='order.png' alt="Logo" />My orders</Link></div></div>
         }
         </div>
         <div className="float-right">

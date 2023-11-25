@@ -166,10 +166,23 @@ input.keyword {
 }
 .body-menu{
   background-color: rgb(139, 139, 139);
+  position: fixed;
+  width: 100%;
+}
+#inaccount{
+  align-items: center;
+  margin-top: 60px;
+  display: flex;
+}
+#inaccount img{
+  width: 40px; /* Adjust the width as needed */
+  height: auto; /* Maintain the aspect ratio */
+  margin-right: 5px; /* Adjust the margin as needed */
 }
 #account{
   padding: 15px;
   border-radius: 10px;
+  margin-top: 50px;
 }
 #account a{
   background-color: rgb(200, 200, 200);
@@ -179,7 +192,6 @@ input.keyword {
   margin-left: 10px;
 }
 #account a:hover{
-  border: none;
   background-color: rgb(139, 139, 139);
   transition: 0.5s;
   color: white;
@@ -187,14 +199,15 @@ input.keyword {
   border-radius: 40px;
 }
 #account img {
-  width: 40px; /* Adjust the width as needed */
-  height: auto; /* Maintain the aspect ratio */
-  margin-right: 5px; /* Adjust the margin as needed */
+  width: 40px; 
+  height: auto;
+  margin-right: 5px; 
 }
 #mycart{
   margin-right: 30px;
   display: flex;
   margin-top: 18px;
+  margin-top: 60px; 
 }
 #mycart img{
   width: 40px; /* Adjust the width as needed */
@@ -209,15 +222,16 @@ input.keyword {
 #logout{
   padding: 15px;
   border-radius: 10px;
+  
 }
-#logout a{
+#inaccount a{
   background-color: rgb(200, 200, 200);
   padding: 10px;
   color: black;
   border-radius: 10px;
   margin-left: 10px;
 }
-#logout :hover{
+#inaccount a:hover{
   border: none;
   background-color: rgb(139, 139, 139);
   transition: 0.5s;
